@@ -6,6 +6,14 @@ TagManager:
   tags:
   - obstacle_non
   - obstacle_cy
+  - Boundary
+  - Door
+  - HomeEnter
+  - SchoolEnter
+  - LibraryEnter
+  - MusicroomEnter
+  - ClassroomEnter
+  - CorridorEnter
   layers:
   - Default
   - TransparentFX
