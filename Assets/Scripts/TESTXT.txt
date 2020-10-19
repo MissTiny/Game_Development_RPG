@@ -1,4 +1,2 @@
-A:
-HELLO
-B:
-HELLO
+A: HELLO
+B: HELLO
