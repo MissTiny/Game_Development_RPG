@@ -11,6 +11,14 @@ public class movable : MonoBehaviour
     private Animator animator;
     public int walkspeed;
     string dir = "left";      //0 up  1 down 2 left 3 right
+    //string walkdir = "left";
+    Vector3 new_dir;
+    bool right_collider = false;
+    bool left_collider = false;
+    bool bottom_collider = false;
+    bool up_collider = false;
+
+    //bool collide = false;
     void Start()
     {
 
@@ -19,44 +27,131 @@ public class movable : MonoBehaviour
     }
     void Update()
     {
-
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"),0.0f);
         animator.SetFloat("Horizontal",movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Magnitude", movement.magnitude);
+
+        if (bottom_collider & movement.y < 0){
+           movement.y = 0;
+        } else if (bottom_collider & movement.y > 0){
+            bottom_collider = false;
+        }
+        if (up_collider & movement.y < 0){
+            up_collider = false;
+        } else if (up_collider & movement.y > 0){
+            movement.y = 0;
+        }
+        if (right_collider & movement.x > 0){
+            movement.x = 0;
+        } else if (right_collider & movement.x < 0){
+            right_collider = false;            
+        }
+        if (left_collider & movement.x > 0){
+            left_collider = false;
+        } else if (left_collider & movement.x < 0){
+            movement.x = 0;
+        }
+        new_dir = movement;
         transform.position = transform.position + movement*walkspeed * Time.deltaTime;
+
         WalkControl();
+        
         if (movement.magnitude <0.1) {
             animator.SetTrigger(dir);
+            
         }
         
+        //Debug.Log(dir);
+        //animator.SetTrigger(dir);
     }
     
     
 
     private void WalkControl()
     {
-        if (Input.GetKey(KeyCode.W))
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey("up")))
         {
             dir = "up";
 
         }
-        else if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey("left"))
         {
 
             dir = "left";
         }
-        else if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey("down"))
         {
 
             dir = "down";
         }
-        else if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey("right"))
         {
 
             dir = "right";
         }
     }
+
+	void OnTriggerEnter2D(Collider2D collision)
+	{
+
+        Debug.Log("Boundary hit");
+        /*
+        if (dir =="down"){
+            bottom_collider = true;
+            Debug.Log("Collide bottom");
+        }
+        if(dir =="up"){
+            up_collider = true;
+            Debug.Log("Collide up");
+        }
+        if(dir =="right"){
+            right_collider = true;
+            Debug.Log("Collide right");
+        }
+        if(dir =="left"){
+            left_collider = true;
+            Debug.Log("Collide left");
+        }*/
+        if(new_dir.y > 0){
+            up_collider = true;
+            //Debug.Log("Collide up");
+        }else if(new_dir.y < 0){
+            bottom_collider = true;
+            //Debug.Log("Collide bottom");
+        }
+        if(new_dir.x > 0){
+            right_collider = true;
+            //Debug.Log("Collide right"); 
+        }else if(new_dir.x < 0){
+            left_collider = true;
+            //Debug.Log("Collide left");
+        }
+
+        if(collision.tag=="CorridorEnter"){
+            Application.LoadLevel(2);
+        }
+
+         
+		
+	}
+    /*
+    void OnTriggerStay2D(Collider2D collision){
+        if (collision.tag == "Boundary"){
+            Debug.Log("Boundary hit");
+            Vector3 movement = new Vector3(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"),0.0f);
+            animator.SetFloat("Horizontal",movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Magnitude", movement.magnitude);
+            //Debug.Log(movement.y);
+            Debug.Log(dir);
+            transform.position = transform.position - movement*walkspeed * Time.deltaTime;
+
+         }
+
+    }
+    */
+
 
     
 }
