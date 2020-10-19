@@ -1,4 +1,4 @@
-A
+A:
 HELLO
-B
+B:
 HELLO

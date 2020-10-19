@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 
 
-public class NewBehaviourScript : MonoBehaviour
+public class dialog : MonoBehaviour
 {
     [Header("UI")]
     public Text textlabel;
@@ -22,7 +22,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Awake()
     {
         Gettextfromfile(txtfile);
-        index = 0;
+        
     }
     private void OnEnable()
     {
@@ -34,6 +34,8 @@ public class NewBehaviourScript : MonoBehaviour
         if((Input.GetKeyDown(KeyCode.F))&& index == textlist.Count)
         {
             gameObject.SetActive(false);
+            index = 0;
+            return;
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
