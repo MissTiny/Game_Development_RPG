@@ -95,38 +95,41 @@ public class movable : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D collision)
 	{
 
-        Debug.Log("Boundary hit");
-        /*
-        if (dir =="down"){
-            bottom_collider = true;
-            Debug.Log("Collide bottom");
+        if(collision.tag != "MainCamera"){
+            Debug.Log("Boundary hit");
+            /*
+            if (dir =="down"){
+                bottom_collider = true;
+                Debug.Log("Collide bottom");
+            }
+            if(dir =="up"){
+                up_collider = true;
+                Debug.Log("Collide up");
+            }
+            if(dir =="right"){
+                right_collider = true;
+                Debug.Log("Collide right");
+            }
+            if(dir =="left"){
+                left_collider = true;
+                Debug.Log("Collide left");
+            }*/
+            if(new_dir.y > 0){
+                up_collider = true;
+                //Debug.Log("Collide up");
+            }else if(new_dir.y < 0){
+                bottom_collider = true;
+                //Debug.Log("Collide bottom");
+            }
+            if(new_dir.x > 0){
+                right_collider = true;
+                //Debug.Log("Collide right"); 
+            }else if(new_dir.x < 0){
+                left_collider = true;
+                //Debug.Log("Collide left");
+            }
         }
-        if(dir =="up"){
-            up_collider = true;
-            Debug.Log("Collide up");
-        }
-        if(dir =="right"){
-            right_collider = true;
-            Debug.Log("Collide right");
-        }
-        if(dir =="left"){
-            left_collider = true;
-            Debug.Log("Collide left");
-        }*/
-        if(new_dir.y > 0){
-            up_collider = true;
-            //Debug.Log("Collide up");
-        }else if(new_dir.y < 0){
-            bottom_collider = true;
-            //Debug.Log("Collide bottom");
-        }
-        if(new_dir.x > 0){
-            right_collider = true;
-            //Debug.Log("Collide right"); 
-        }else if(new_dir.x < 0){
-            left_collider = true;
-            //Debug.Log("Collide left");
-        }
+        
 
         if(collision.tag=="CorridorEnter"){
             Application.LoadLevel(2);
