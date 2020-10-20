@@ -28,6 +28,9 @@ public class movable : MonoBehaviour
     void Update()
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"),0.0f);
+        if(movement.x != 0 ){
+            movement.y = 0;
+        }
         animator.SetFloat("Horizontal",movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Magnitude", movement.magnitude);
@@ -120,8 +123,7 @@ public class movable : MonoBehaviour
             }else if(new_dir.y < 0){
                 bottom_collider = true;
                 //Debug.Log("Collide bottom");
-            }
-            if(new_dir.x > 0){
+            }else if(new_dir.x > 0){
                 right_collider = true;
                 //Debug.Log("Collide right"); 
             }else if(new_dir.x < 0){
