@@ -61,7 +61,7 @@ public class movable : MonoBehaviour
             animator.SetTrigger(dir);
             
         }
-        
+        //good morning
         //Debug.Log(dir);
         //animator.SetTrigger(dir);
     }
