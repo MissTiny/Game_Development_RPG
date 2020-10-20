@@ -7,6 +7,7 @@ public class starttalk : MonoBehaviour
     public GameObject Button;
     public GameObject talkUI;
     // Start is called before the first frame update
+    //Button.gameObject.SetActive(false);
     private void OnTriggerEnter2D(Collider2D other)
     {
         Button.SetActive(true);
