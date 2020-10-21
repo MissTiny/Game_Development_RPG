@@ -9,7 +9,7 @@ public class cameraFollow : MonoBehaviour
     public GameObject followObject;
     private Transform target;
     //private Vector3 offset;
-
+    //hello
     Vector3 previous_position;
     Vector3 dir;
     bool right_collider = false;
