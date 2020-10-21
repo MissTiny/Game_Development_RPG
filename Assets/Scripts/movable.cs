@@ -136,10 +136,25 @@ public class movable : MonoBehaviour
         if(collision.tag=="CorridorEnter"){
             Application.LoadLevel(2);
         }
+        else if(collision.tag == "HomeEnter")
+        {
+            Application.LoadLevel(1);
+        }
+        else if (collision.tag == "ClassroomEnter")
+        {
+            Application.LoadLevel(3);
+        }
+        else if (collision.tag == "LibraryEnter")
+        {
+            Application.LoadLevel(4);
+        }
+        else if (collision.tag == "MusicroomEnter")
+        {
+            Application.LoadLevel(5);
+        }
 
-         
-		
-	}
+
+    }
     /*
     void OnTriggerStay2D(Collider2D collision){
         if (collision.tag == "Boundary"){
