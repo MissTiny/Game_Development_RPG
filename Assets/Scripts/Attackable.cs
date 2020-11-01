@@ -19,7 +19,7 @@ public class Attackable : MonoBehaviour
     public void Start()
     {
         isAttacker = false;
-	finish = true;
+	    finish = true;
         parent = this.transform.parent.gameObject;
         animator = parent.GetComponent<Animator>();
         disableCollider();
@@ -36,9 +36,9 @@ public class Attackable : MonoBehaviour
         //如果是玩家，才需要响应键盘输入
         if (parent.tag == "Player" && Input.GetKey(KeyCode.J))
         {
-	    if(finish){
-		 Attack();
-	    }
+	        if(finish){
+		        Attack();
+	        }
             
         }
 
@@ -82,7 +82,7 @@ public class Attackable : MonoBehaviour
         enableCollider();
         isAttacker = true;
         animator.SetTrigger("Attack");
-	finish = false;
+	    finish = false;
         //如果是一个可上下左右移动的物体，我们得知道它的攻击方向
         movable m = parent.GetComponent<movable>();
         if (m != null)
@@ -96,7 +96,7 @@ public class Attackable : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         disableCollider();
-	finish = true;
+	    finish = true;
     }
 
     private void OnMouseOver()

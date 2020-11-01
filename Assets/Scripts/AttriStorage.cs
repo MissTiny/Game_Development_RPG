@@ -9,7 +9,7 @@ public class AttriStorage : MonoBehaviour
     static Dictionary<string, Dictionary<string, int>> attributeMap;
     // Start is called before the first frame update
 
-    private void Awake()
+    public static void Awake()
     {
         attributeMap = new Dictionary<string, Dictionary<string, int>>();
         Add("Player_1", "ability1", "ability2", "ability3", "ability4", 1, 2, 3, 4);
