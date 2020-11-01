@@ -22,8 +22,8 @@ public class AbilityShowable : MonoBehaviour
     void Start()
     {
         panel.SetActive(false);
-
-
+        
+        
         //get ability from database,now is AttributesMap script
         Debug.Log(name);
         abilityMap = AttriStorage.get(name);

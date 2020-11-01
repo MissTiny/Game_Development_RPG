@@ -43,7 +43,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 782720084029064690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2447a55c785caa74e9c5431b5a4200fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c1a6275ecb34a8419e06797dedfa67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
@@ -115,7 +115,6 @@ GameObject:
   - component: {fileID: 1767539366945628494}
   - component: {fileID: 2703981969438501804}
   - component: {fileID: 5348130997962664694}
-  - component: {fileID: 4160104549515724372}
   m_Layer: 0
   m_Name: HurtRange
   m_TagString: Untagged
@@ -193,15 +192,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.45}
   m_EdgeRadius: 0
---- !u!114 &4160104549515724372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3325582077331596393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 382a58f4889ec524696a2f9df18c8ec7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
