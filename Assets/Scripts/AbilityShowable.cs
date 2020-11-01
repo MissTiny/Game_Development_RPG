@@ -26,6 +26,7 @@ public class AbilityShowable : MonoBehaviour
         
         //get ability from database,now is AttributesMap script
         Debug.Log(name);
+        
         abilityMap = AttriStorage.get(name);
         abilities = AttriStorage.getAbilityNames(name);
         Debug.Log(100000);
