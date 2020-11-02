@@ -69,14 +69,22 @@ public class AbilityShowable : MonoBehaviour
         transform.position = newposition;
         //value update
         Text[] texts = panel.GetComponentsInChildren<Text>();
-        for (int i = 0; i < texts.Length; i++)
-        {
-            if (abilities == null || abilityMap == null)
-            {
-                break;
-            }
-            texts[i].text = abilities[i] + ": " + abilityMap[abilities[i]];
-        }
+        //for (int i = 0; i < texts.Length; i++)
+        //{
+        //    if (abilities == null || abilityMap == null)
+        //    {
+        //        break;
+        //    }
+        //    texts[i].text = abilities[i] + ": " + abilityMap[abilities[i]];
+        //}
+        //暂时简单修改了属性显示 后期需要放入map或dictionary
+        texts[0].text = "IQ: " + Ability.getIQ().ToString();
+        texts[1].text = "EQ: " + Ability.getEQ().ToString();
+        texts[2].text = "Imagination: " + Ability.getImagination().ToString();
+        texts[3].text = "Memory: " + Ability.getMemory().ToString();
+        texts[4].text = "Charm: " + Ability.getCharm().ToString();
+        texts[5].text = "Energy: " + Ability.getEnergy().ToString();
+        //texts[6].text = "Pressure: " + Ability.getPressure().ToString();
 
     }
 
