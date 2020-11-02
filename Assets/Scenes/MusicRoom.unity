@@ -121,86 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &148241193
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1383211697107739528, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_Name
-      value: SubMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 3762034666959167116, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.43927
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.3495878
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.8577101
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638574125132019103, guid: 92208267e52e22540887ecdf5c683ed9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 92208267e52e22540887ecdf5c683ed9, type: 3}
---- !u!1 &148241194 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5951144407047569837, guid: 92208267e52e22540887ecdf5c683ed9,
-    type: 3}
-  m_PrefabInstance: {fileID: 148241193}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &188089521
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +329,6 @@ GameObject:
   - component: {fileID: 272447431}
   - component: {fileID: 272447430}
   - component: {fileID: 272447434}
-  - component: {fileID: 272447433}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -482,19 +401,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &272447433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272447429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f24cd3e593aca4992c011dbcf9a9a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  submenu: {fileID: 148241194}
 --- !u!114 &272447434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,7 +1265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1198528671
 PrefabInstance:
