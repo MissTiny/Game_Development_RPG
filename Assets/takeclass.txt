@@ -1,0 +1,9 @@
+teacher: HELLO! welcome to class!
+me: HELLO!
+teacher: which class do you want to take?
+teacher: here is the course list you could take.
+.......
+teacher: yes! class start now
+.......
+teacher: no? see you later!
+.......
