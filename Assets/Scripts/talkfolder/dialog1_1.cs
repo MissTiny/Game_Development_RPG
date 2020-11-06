@@ -34,6 +34,15 @@ public class dialog1_1 : MonoBehaviour
         textlabel.text = textlist[index];
     }
     // Update is called once per frame
+    public void CreateButton(Transform panel, Vector3 position, Vector2 size, UnityEngine.Events.UnityAction method)
+    {
+        GameObject button = new GameObject();
+        button.transform.parent = panel;
+        button.AddComponent<RectTransform>();
+        button.AddComponent<Button>();
+        button.transform.position = position;
+        button.GetComponent<Button>().onClick.AddListener(method);
+    }
     void Update()
     {
         //if((Input.GetKeyDown(KeyCode.F))&& index == textlist.Count)
@@ -48,11 +57,21 @@ public class dialog1_1 : MonoBehaviour
             //gameObject.SetActive(false);
             courseUI.SetActive(true);
            // Debug.Log(Course.Courses[0]);
-           if(Ability.IQ == 20)
+           
+            for(int i =0; i< Course.Courses.Count; i++)
             {
-               coursename.text = Course.Courses[1].CourseName;
+                if (Ability.IQ >= Course.Courses[i].MinimumIQ)
+                {
+                   
+                    coursename.text += Course.Courses[i].CourseName;
+                    coursename.text += "                       ";
+                    
+                }
             }
-            coursename.text = Course.Courses[0].CourseName;
+            //coursename.text = Course.Courses[0].CourseName;
+
+
+
             
             index = 4;
             st = true;
@@ -62,8 +81,11 @@ public class dialog1_1 : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Y)) && st==true)
 
         {
-             Ability.IQ += 10;
-            //coursename.text = "class start";       
+            Ability.IQ += Course.Courses[1].Gain["IQ"];
+            //Ability.IQ += 50;
+            //Debug.Log(Ability.IQ);
+            //coursename.text = "class start";   
+            coursename.text = "";
             courseUI.SetActive(false);
             index = 5;
 
