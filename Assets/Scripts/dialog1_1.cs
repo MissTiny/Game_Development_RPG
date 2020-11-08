@@ -79,7 +79,8 @@ public class dialog1_1 : MonoBehaviour
 
             for (int i =0; i< Course.Courses.Count; i++)
             {
-                if (Ability.IQ >= Course.Courses[i].MinimumIQ)
+                if ((Ability.IQ >= Course.Courses[i].MinimumIQ)&&(Ability.Charm >= Course.Courses[i].MinimumCharm) && (Ability.EQ >= Course.Courses[i].MinimumEQ) && (Ability.Imagination >= Course.Courses[i].MinimumImagination) 
+                    && (Ability.Memory>= Course.Courses[i].MinimumMemory))
                 {
                    
                     coursename.text += Course.Courses[i].CourseName;
