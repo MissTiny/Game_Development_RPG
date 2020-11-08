@@ -10,6 +10,7 @@ public class Listener : MonoBehaviour
     private GameObject temp_submenu;
     private bool submenu_stat = false;
 
+
     void Awake()
     {
         if (instance == null)
