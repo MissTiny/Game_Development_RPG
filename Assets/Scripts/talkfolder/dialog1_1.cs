@@ -13,12 +13,16 @@ public class dialog1_1 : MonoBehaviour
     public GameObject courseUI;
     public CourseList Course = new CourseList();
     public Text coursename;
-
+    public GameObject leftUI;
+    public GameObject rightUI;
+    public GameObject player;
 
     [Header("textfile")]
     public TextAsset txtfile;
     public int index;
     public bool st = false;
+    public int indexadder = 1;
+    List<GameObject> button_list = new List<GameObject>();
 
 
     List<string> textlist = new List<string>();
@@ -33,15 +37,25 @@ public class dialog1_1 : MonoBehaviour
     {
         textlabel.text = textlist[index];
     }
+    private void click_course(GameObject button, Course course)
+    {
+        Ability.IQ += course.Gain["IQ"];
+        //Ability.IQ += 50;
+        //Debug.Log(Ability.IQ);
+        //coursename.text = "class start";   
+       
+    }
+    
     // Update is called once per frame
-    public void CreateButton(Transform panel, Vector3 position, Vector2 size, UnityEngine.Events.UnityAction method)
+    public GameObject CreateButton(Transform panel, Vector3 position)
     {
         GameObject button = new GameObject();
         button.transform.parent = panel;
         button.AddComponent<RectTransform>();
         button.AddComponent<Button>();
         button.transform.position = position;
-        button.GetComponent<Button>().onClick.AddListener(method);
+        return button; 
+        
     }
     void Update()
     {
@@ -49,6 +63,10 @@ public class dialog1_1 : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.F)) && index == 6 || index == 9)
         {
             gameObject.SetActive(false);
+            player.GetComponent<movable>().enabled = true;
+            leftUI.SetActive(false);
+            rightUI.SetActive(false);
+
             index = 0;
             return;
         }
@@ -56,9 +74,10 @@ public class dialog1_1 : MonoBehaviour
         {
             //gameObject.SetActive(false);
             courseUI.SetActive(true);
-           // Debug.Log(Course.Courses[0]);
-           
-            for(int i =0; i< Course.Courses.Count; i++)
+            // Debug.Log(Course.Courses[0]);
+            player.GetComponent<movable>().enabled = false;
+
+            for (int i =0; i< Course.Courses.Count; i++)
             {
                 if (Ability.IQ >= Course.Courses[i].MinimumIQ)
                 {
@@ -74,10 +93,14 @@ public class dialog1_1 : MonoBehaviour
 
             
             index = 4;
+            indexadder = 0;
             st = true;
            
             //return;
         }
+
+
+
         if ((Input.GetKeyDown(KeyCode.Y)) && st==true)
 
         {
@@ -85,14 +108,21 @@ public class dialog1_1 : MonoBehaviour
             //Ability.IQ += 50;
             //Debug.Log(Ability.IQ);
             //coursename.text = "class start";   
+            player.GetComponent<movable>().enabled = false;
             coursename.text = "";
             courseUI.SetActive(false);
+            indexadder = 1;
             index = 5;
 
         }
+
+
+
         if ((Input.GetKeyDown(KeyCode.N)) && st == true)
         {
+            player.GetComponent<movable>().enabled = false;
             courseUI.SetActive(false);
+            indexadder = 1;
             index = 7;
 
             
@@ -100,8 +130,12 @@ public class dialog1_1 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
+            
+            player.GetComponent<movable>().enabled = false;
             textlabel.text = textlist[index];
-            index++;
+            
+            index += indexadder;
+            //index++;
         }
     }
     private void OntriggerExit2D(Collider2D other)
