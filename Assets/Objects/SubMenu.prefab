@@ -489,7 +489,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6936838372936006360}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 37951950600872592, guid: a6582b56faa0cf444a8a437a432f8716,
+          type: 3}
+        m_MethodName: TaskOnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5590002596954089505
 GameObject:
   m_ObjectHideFlags: 0

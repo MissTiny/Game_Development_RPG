@@ -9,6 +9,12 @@ public class Listener : MonoBehaviour
     public GameObject submenu;
     private GameObject temp_submenu;
     private bool submenu_stat = false;
+    private static float Bgm_volume;
+    private static float Walk_volume;
+    private static float Click_volume;
+    private static float Current_Bgm_volume;
+    private static float Current_Walk_volume;
+    private static float Current_Click_volume;
 
 
     void Awake()
@@ -17,6 +23,12 @@ public class Listener : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject);
+            Bgm_volume = AudioManager.instance.getVolume("Background");
+            Walk_volume = AudioManager.instance.getVolume("Walk");
+            Click_volume = AudioManager.instance.getVolume("Button Click");
+            Current_Bgm_volume = 5;
+            Current_Click_volume = 5;
+            Current_Walk_volume = 5;
         }
         else
         {
@@ -37,5 +49,29 @@ public class Listener : MonoBehaviour
             Destroy(temp_submenu);
             submenu_stat = !submenu_stat;
         }
+    }
+    public static void setCurrent_Bgm_volume(float volume)
+    {
+        Current_Bgm_volume = volume;
+    }
+    public static void setCurrent_Walk_volume(float volume)
+    {
+        Current_Walk_volume = volume;
+    }
+    public static void setCurrent_Click_volume(float volume)
+    {
+        Current_Click_volume = volume;
+    }
+    public static float getCurrent_Bgm_volume()
+    {
+        return Current_Bgm_volume;
+    }
+    public static float getCurrent_Walk_volume()
+    {
+        return Current_Walk_volume;
+    }
+    public static float getCurrent_Click_volume()
+    {
+        return Current_Click_volume;
     }
 }
