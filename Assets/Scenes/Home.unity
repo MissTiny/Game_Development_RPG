@@ -383,6 +383,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: -0.3, y: 0, z: 0}
+--- !u!1 &112924030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3254538677284563120, guid: c43b2659c6f94b94aadbb7e46ec1aa57,
+    type: 3}
+  m_PrefabInstance: {fileID: 377780486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &124986616
 GameObject:
   m_ObjectHideFlags: 0
@@ -3831,6 +3837,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 4468721522021794669, guid: 72a7c83dfaf458443bb58f772274c4be,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468721522021794669, guid: 72a7c83dfaf458443bb58f772274c4be,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5267968230856965717, guid: 72a7c83dfaf458443bb58f772274c4be,
         type: 3}
       propertyPath: walkspeed
@@ -3840,7 +3856,7 @@ PrefabInstance:
         type: 3}
       propertyPath: panel
       value: 
-      objectReference: {fileID: 37945780}
+      objectReference: {fileID: 112924030}
     - target: {fileID: 8784315029173168890, guid: 72a7c83dfaf458443bb58f772274c4be,
         type: 3}
       propertyPath: m_BodyType

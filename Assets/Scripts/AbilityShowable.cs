@@ -26,9 +26,6 @@ public class AbilityShowable : MonoBehaviour
         
         //get ability from database,now is AttributesMap script
         Debug.Log(name);
-        
-        abilityMap = AttriStorage.get(name);
-        abilities = AttriStorage.getAbilityNames(name);
         Debug.Log(100000);
         updatePanel();
 
@@ -84,8 +81,7 @@ public class AbilityShowable : MonoBehaviour
         texts[3].text = "Memory: " + Ability.getMemory().ToString();
         texts[4].text = "Charm: " + Ability.getCharm().ToString();
         texts[5].text = "Energy: " + Ability.getEnergy().ToString();
-        //texts[6].text = "Pressure: " + Ability.getPressure().ToString();
-
+        texts[6].text = "Pressure: " + Ability.getPressure().ToString();
     }
 
 
