@@ -3226,9 +3226,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 362
-        width: 96
-        height: 112
+        y: 384
+        width: 47
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4490,7 +4490,7 @@ TextureImporter:
         width: 45
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4498,6 +4498,27 @@ TextureImporter:
       bones: []
       spriteID: 85f2239bfa0dd1100800000000000000
       internalID: 80449821507465048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_75
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 362
+        width: 48
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfaeb5b0525ae5580800000000000000
+      internalID: -8836443840331388163
       vertices: []
       indices: 
       edges: []

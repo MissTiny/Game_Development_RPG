@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Home.unity
     guid: 827897ac748a63d4ca9254ca98676564
   - enabled: 1
-    path: Assets/Scenes/Corridor.unity
+    path: Assets/Scenes/Corridor_2.unity
     guid: e6c4b909a36e42a439854a6eac79b17e
   - enabled: 1
     path: Assets/Scenes/Classroom.unity

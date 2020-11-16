@@ -19,6 +19,5 @@ public class LoadSetting : MonoBehaviour
     {
         AudioManager.instance.Play("Button Click");
         Application.LoadLevel(6);
-        Instantiate(null);
     }
 }
