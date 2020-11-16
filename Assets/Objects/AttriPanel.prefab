@@ -244,7 +244,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8327500153524727008}
   - component: {fileID: 8327500153524727011}
-  - component: {fileID: 4144249306193720419}
   - component: {fileID: 8327500153524727010}
   m_Layer: 5
   m_Name: AttriPanel
@@ -273,7 +272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 75.29, y: -24.2}
+  m_AnchoredPosition: {x: -7, y: 90}
   m_SizeDelta: {x: -922.59674, y: -184.62338}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8327500153524727011
@@ -284,18 +283,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8327500153524727037}
   m_CullTransparentMesh: 0
---- !u!114 &4144249306193720419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8327500153524727037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9246b4a553e02f64aace061d988a2ab4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8327500153524727010
 MonoBehaviour:
   m_ObjectHideFlags: 0
