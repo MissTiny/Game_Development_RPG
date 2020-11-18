@@ -15,6 +15,8 @@ public class Listener : MonoBehaviour
     private static float Current_Bgm_volume;
     private static float Current_Walk_volume;
     private static float Current_Click_volume;
+    public static int Ending_date = 3;
+    private static int Current_date;
 
 
     void Awake()
@@ -29,6 +31,7 @@ public class Listener : MonoBehaviour
             Current_Bgm_volume = 5;
             Current_Click_volume = 5;
             Current_Walk_volume = 5;
+            Current_date = 0;
         }
         else
         {
@@ -48,6 +51,10 @@ public class Listener : MonoBehaviour
         {
             Destroy(temp_submenu);
             submenu_stat = !submenu_stat;
+        }
+        if(Current_date > Ending_date)
+        {
+            Application.LoadLevel(7);
         }
     }
     public static void setCurrent_Bgm_volume(float volume)
@@ -73,5 +80,9 @@ public class Listener : MonoBehaviour
     public static float getCurrent_Click_volume()
     {
         return Current_Click_volume;
+    }
+    public static void addDate()
+    {
+        Current_date++;
     }
 }
