@@ -25,8 +25,7 @@ public class AbilityShowable : MonoBehaviour
         
         
         //get ability from database,now is AttributesMap script
-        Debug.Log(name);
-        Debug.Log(100000);
+        
         updatePanel();
 
     }
