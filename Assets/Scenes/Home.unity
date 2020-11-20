@@ -1024,7 +1024,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1382,12 +1382,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810635566}
   m_CullTransparentMesh: 0
---- !u!1 &996448885 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7063540161456723818, guid: 72a7c83dfaf458443bb58f772274c4be,
-    type: 3}
-  m_PrefabInstance: {fileID: 6031595328945985458}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1011500793
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,7 +4175,7 @@ PrefabInstance:
     - target: {fileID: 7937768339173136713, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7937768339173136713, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
         type: 3}
