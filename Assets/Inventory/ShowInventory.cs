@@ -20,7 +20,9 @@ public class ShowInventory : MonoBehaviour
     public GameObject Equip_panel;
     public GameObject Bag_panel;
     public Inventory bag;
-    public bagSlotInterface slotPrefab;
+    public slotItemInterface slotItemPrefab;
+    public Transform bagSlot;
+    
     public bool reStartGameEmptyBag;
     private 背包显示接口 bagIt;
 
@@ -44,11 +46,13 @@ public class ShowInventory : MonoBehaviour
     private void init()
     {
         if (reStartGameEmptyBag) {
-            clearPanelAndData();
+            initBagShowing();
+            initBagData();
         }
         RefreshItem();
         description.text = "";
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -82,48 +86,73 @@ public class ShowInventory : MonoBehaviour
         description.text= Description;
     }
 
-    private void clearPanelAndData() {
+    private void initBagData() {
         for (int i = 0; i < bag.itemList.Count; i++)
         {
-            bag.itemList[i].itemNumber = 0;
+            Debug.Log("asdfasdfadfadfadfa");
+            if(bag.itemList[i]!=null) bag.itemList[i].itemNumber = 0;
         }
         bag.itemList.Clear();
-        clearBagShowing();
+        for (int i = 0;i<bag.initCapacity;i++) {
+            bag.itemList.Add(null);
+        }
     }
 
     //根据给的itemDataModel，item的数据实体创建对应的背包显示外观prefab，并显示在背包里
-    public void ShowNewItem(ItemDataModel itemDataModel) {
-        bagSlotInterface newItem = Instantiate(slotPrefab,slotGrid.transform.position,Quaternion.identity);
-        if (newItem == null) {
-            
+    public void ShowNewItem(ItemDataModel itemDataModel, int SlotIdx) {
+        if (itemDataModel == null) {
             return;
         }
-        newItem.gameObject.transform.SetParent(slotGrid.transform);
+        destroySlotItem(SlotIdx);
+        GameObject father = getSubObjectByIndex(slotGrid, SlotIdx);
+        slotItemInterface newItem = Instantiate(slotItemPrefab, father.transform.position, Quaternion.identity);
+        if (newItem == null)
+        {
+            return;
+        }
+        newItem.gameObject.transform.SetParent(father.transform);
         newItem.slotItem = itemDataModel;
         newItem.slotImage.sprite = itemDataModel.itemImage;
         newItem.number.text = itemDataModel.itemNumber.ToString();
-        
+    }
+    
+    
+
+    private GameObject getSubObjectByIndex(GameObject father, int idx) {
+        return father.transform.GetChild(idx).gameObject;
     }
 
     
 
     public void RefreshItem() {
-        clearBagShowing();
+        //initBagShowing();
         showAllItem();
     }
 
     //clear all the prefab in the bag, but the data of items will still be there
-    public void clearBagShowing() {
-        for (int i = 0; i < slotGrid.transform.childCount; i++)
-        {
+    public void initBagShowing() {
+        for (int i = 0;i<slotGrid.transform.childCount;i++) {
             Destroy(slotGrid.transform.GetChild(i).gameObject);
+        }
+        
+        for (int i = 0; i < bag.initCapacity; i++)
+        {
+            Transform newItem = Instantiate(bagSlot, slotGrid.transform.position, Quaternion.identity);
+            newItem.SetParent(slotGrid.transform);
         }
     }
 
     //重新把inventory（背包的数据实体，不是显示的panel）里的item重新加载到panel上
     private void showAllItem() {
         for (int i = 0;i<bag.itemList.Count;i++) {
-            ShowNewItem(bag.itemList[i]);
+            ShowNewItem(bag.itemList[i],i);
+        }
+    }
+    private void destroySlotItem(int idx) {
+        GameObject father = getSubObjectByIndex(slotGrid, idx);
+        for (int j = 0; j <father.transform.childCount; j++)
+        {
+            Destroy(father.transform.GetChild(j).gameObject);
         }
     }
 

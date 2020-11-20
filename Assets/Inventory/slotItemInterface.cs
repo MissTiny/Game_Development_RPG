@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
-public class bagSlotInterface: MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
+public class slotItemInterface: MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
 {
     // Start is called before the first frame update
     public ItemDataModel slotItem;
