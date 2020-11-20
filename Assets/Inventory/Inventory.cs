@@ -5,5 +5,6 @@ using UnityEngine;
 public class Inventory : ScriptableObject
 {
     // Start is called before the first frame update
+    public int initCapacity;
     public List<ItemDataModel> itemList = new List<ItemDataModel>();
 }

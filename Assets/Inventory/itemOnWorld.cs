@@ -30,8 +30,8 @@ public class itemOnWorld : MonoBehaviour
     private void playerPickup() {
         if (Input.GetKeyDown(KeyCode.G) && playerEnter == true)
         {
-            AddNewItem(inventory);
-            Destroy(gameObject);
+            
+            if (AddNewItem(inventory)) Destroy(gameObject);
         }
     }
 
@@ -53,8 +53,8 @@ public class itemOnWorld : MonoBehaviour
             //npc触碰物品
             else {
                 if (npcAutoPickUp == true) {
-                    AddNewItem(inventory);
-                    Destroy(gameObject);
+                    
+                    if(AddNewItem(inventory)) Destroy(gameObject);
                 }
             }
         }
@@ -63,20 +63,58 @@ public class itemOnWorld : MonoBehaviour
             return;
         }
     }
-   
+    public int findEmptySlotInBag(Inventory bag)
+    {
+        for (int i = 0; i < bag.itemList.Count; i++)
+        {
+            if (bag.itemList[i] == null)
+            {
+                Debug.Log(i);
+                return i;
+            }
+        }
+        Debug.Log(-1);
+        return -1;
+    }
+    private int findSlotInBag(ItemDataModel item)
+    {
+        for (int i = 0; i < inventory.itemList.Count; i++)
+        {
+            if (inventory.itemList[i] == item)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         playerEnter = false;
     }
-    public void AddNewItem(Inventory Inventory) {
-        itemDataModel.itemNumber += itemDataModel.addNumber;
+    public bool AddNewItem(Inventory Inventory) {
+        
+        
         if (!Inventory.itemList.Contains(itemDataModel))
         {
-            Inventory.itemList.Add(itemDataModel);
-            showInventory.ShowNewItem(itemDataModel);
+            int idx = findEmptySlotInBag(Inventory);
+            if (idx == -1)
+            {
+                Debug.Log("no empty slot for store new item");
+                return false;
+            }
+            itemDataModel.itemNumber += itemDataModel.addNumber;
+            Inventory.itemList[idx] = itemDataModel;
+            
+            showInventory.ShowNewItem(itemDataModel,idx);
         }
         else {
-            showInventory.RefreshItem();
+            
+            itemDataModel.itemNumber += itemDataModel.addNumber;
+            showInventory.ShowNewItem(itemDataModel, findSlotInBag(itemDataModel));
+            
         }
+        return true;
     }
 }
