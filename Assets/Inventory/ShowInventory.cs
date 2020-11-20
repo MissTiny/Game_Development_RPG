@@ -45,8 +45,8 @@ public class ShowInventory : MonoBehaviour
 
     private void init()
     {
+        initBagShowing();
         if (reStartGameEmptyBag) {
-            initBagShowing();
             initBagData();
         }
         RefreshItem();
@@ -59,6 +59,7 @@ public class ShowInventory : MonoBehaviour
     {
         if (isPlayer && Input.GetKeyDown(KeyCode.I))
         {
+            
             OpenBag();
         }
         if (isPlayer && Input.GetKeyDown(KeyCode.E))
@@ -68,7 +69,7 @@ public class ShowInventory : MonoBehaviour
     }
     void OpenEquip()
     {
-        
+            RefreshItem();
             eopen = Equip_panel.active;
             eopen = !eopen;
             Equip_panel.SetActive(eopen);

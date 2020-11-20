@@ -659,6 +659,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 7937768338877991320, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.6156863
+      objectReference: {fileID: 0}
     - target: {fileID: 7937768339173136713, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5371,8 +5376,20 @@ PrefabInstance:
     - target: {fileID: 5534350049507278081, guid: 72a7c83dfaf458443bb58f772274c4be,
         type: 3}
       propertyPath: reStartGameEmptyBag
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5534350049507278081, guid: 72a7c83dfaf458443bb58f772274c4be,
+        type: 3}
+      propertyPath: slotItemPrefab
+      value: 
+      objectReference: {fileID: 6106812124428539517, guid: 2b76ebe6aff5ae04cb2889f6e167adb0,
+        type: 3}
+    - target: {fileID: 5534350049507278081, guid: 72a7c83dfaf458443bb58f772274c4be,
+        type: 3}
+      propertyPath: bagSlot
+      value: 
+      objectReference: {fileID: 6762965212621376470, guid: ea338ecaed70047409f04b18596f4207,
+        type: 3}
     - target: {fileID: 6044357901446706608, guid: 72a7c83dfaf458443bb58f772274c4be,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size

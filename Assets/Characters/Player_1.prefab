@@ -54,6 +54,11 @@ MonoBehaviour:
     type: 3}
   Bag_panel: {fileID: 579287691317558555, guid: 3f5282b3026aa51438c55be87c144532,
     type: 3}
+  bag: {fileID: 11400000, guid: b512858dab2aa5749bd7f2c3354ff708, type: 2}
+  slotItemPrefab: {fileID: 6106812124428539517, guid: 2b76ebe6aff5ae04cb2889f6e167adb0,
+    type: 3}
+  bagSlot: {fileID: 6762965212621376470, guid: ea338ecaed70047409f04b18596f4207, type: 3}
+  reStartGameEmptyBag: 0
 --- !u!114 &6612323758620714894
 MonoBehaviour:
   m_ObjectHideFlags: 0
