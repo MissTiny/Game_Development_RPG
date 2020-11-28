@@ -8,7 +8,9 @@ public class Character_list : MonoBehaviour
     
     public Character_list()
     {
-        charaters.Add(new Charater("Emma", new List<string> { "Hello! What's up!"}, new Dictionary<string, int> { { "Book", 5 } }));
+        charaters = new List<Charater>();
+        charaters.Add(new Charater("Emma", new List<string> { "Hello! What's up!", "how are u today?","i love our school" }, new Dictionary<string, int> { { "Book", 5 } }));
+
     }
 
    
