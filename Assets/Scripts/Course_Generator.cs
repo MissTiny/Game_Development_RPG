@@ -24,7 +24,7 @@ public class Course_Generator : MonoBehaviour
         var children = new List<GameObject>();
         foreach (Transform child in Content.transform) children.Add(child.gameObject);
         children.ForEach(child => Destroy(child));
-        foreach (Course c in CourseList.Courses) 
+       
 
     }
 }
