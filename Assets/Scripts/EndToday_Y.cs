@@ -9,6 +9,7 @@ public class EndToday_Y : MonoBehaviour
     public void TaskOnClick()
     {
         Listener.addDate();
+        Ability.Energy = 100;
         panel.SetActive(false);
     }
 }

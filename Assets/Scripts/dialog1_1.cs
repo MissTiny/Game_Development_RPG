@@ -40,10 +40,7 @@ public class dialog1_1 : MonoBehaviour
     private void click_course(GameObject button, Course course)
     {
         Ability.IQ += course.Gain["IQ"];
-        //Ability.IQ += 50;
-        //Debug.Log(Ability.IQ);
-        //coursename.text = "class start";   
-       
+        Ability.Energy += course.Gain["Energy"];
     }
     
     // Update is called once per frame
@@ -105,16 +102,19 @@ public class dialog1_1 : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Y)) && st==true)
 
         {
-            Ability.IQ += Course.Courses[1].Gain["IQ"];
-            //Ability.IQ += 50;
-            //Debug.Log(Ability.IQ);
-            //coursename.text = "class start";   
-            player.GetComponent<movable>().enabled = false;
-            coursename.text = "";
-            courseUI.SetActive(false);
-            indexadder = 1;
-            index = 5;
-
+            if(Ability.Energy > 0)
+            {
+                Ability.IQ += Course.Courses[1].Gain["IQ"];
+                Ability.Energy += Course.Courses[1].Gain["Energy"];
+                //Ability.IQ += 50;
+                //Debug.Log(Ability.IQ);
+                //coursename.text = "class start";   
+                player.GetComponent<movable>().enabled = false;
+                coursename.text = "";
+                courseUI.SetActive(false);
+                indexadder = 1;
+                index = 5;
+            }
         }
 
 

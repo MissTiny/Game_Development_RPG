@@ -1,0 +1,1025 @@
+fileFormatVersion: 2
+guid: 62c37beefd234694981af805f2048d49
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -735366600161140557
+    second: spring_town.ja-JP._0
+  - first:
+      213: -5037439060731096423
+    second: spring_town.ja-JP._1
+  - first:
+      213: 2611982083059482408
+    second: spring_town.ja-JP._2
+  - first:
+      213: 7845632867072712437
+    second: spring_town.ja-JP._3
+  - first:
+      213: -2331507249795856880
+    second: spring_town.ja-JP._4
+  - first:
+      213: 3017840836026613904
+    second: spring_town.ja-JP._5
+  - first:
+      213: -1859569755117522809
+    second: spring_town.ja-JP._6
+  - first:
+      213: 1882059828013222368
+    second: spring_town.ja-JP._7
+  - first:
+      213: -7207525820966458003
+    second: spring_town.ja-JP._8
+  - first:
+      213: -7910146684035269428
+    second: spring_town.ja-JP._9
+  - first:
+      213: -4569942885885938245
+    second: spring_town.ja-JP._10
+  - first:
+      213: 8430348008282923640
+    second: spring_town.ja-JP._11
+  - first:
+      213: 5965410836696465810
+    second: spring_town.ja-JP._12
+  - first:
+      213: -6982169610935911983
+    second: spring_town.ja-JP._13
+  - first:
+      213: -3310625523006437170
+    second: spring_town.ja-JP._14
+  - first:
+      213: 5956940385285114511
+    second: spring_town.ja-JP._15
+  - first:
+      213: 1605024142621417902
+    second: spring_town.ja-JP._16
+  - first:
+      213: 4842833394640963345
+    second: spring_town.ja-JP._17
+  - first:
+      213: 5734249547454672630
+    second: spring_town.ja-JP._18
+  - first:
+      213: -8517396156025476926
+    second: spring_town.ja-JP._19
+  - first:
+      213: 979752835884330748
+    second: spring_town.ja-JP._20
+  - first:
+      213: 2084203882446097644
+    second: spring_town.ja-JP._21
+  - first:
+      213: 8150607570569026566
+    second: spring_town.ja-JP._22
+  - first:
+      213: 5233103994380554584
+    second: spring_town.ja-JP._23
+  - first:
+      213: 212848883601176403
+    second: spring_town.ja-JP._24
+  - first:
+      213: -3974437002504030273
+    second: spring_town.ja-JP._25
+  - first:
+      213: -4095565347482771067
+    second: spring_town.ja-JP._26
+  - first:
+      213: -4072216951228630144
+    second: spring_town.ja-JP._27
+  - first:
+      213: 1336637557066897175
+    second: spring_town.ja-JP._28
+  - first:
+      213: -9138805321506289077
+    second: spring_town.ja-JP._29
+  - first:
+      213: -5517311158166785639
+    second: spring_town.ja-JP._30
+  - first:
+      213: 1113669645921018149
+    second: spring_town.ja-JP._31
+  - first:
+      213: 1889528306910069063
+    second: spring_town.ja-JP._32
+  - first:
+      213: 7266099620443770009
+    second: spring_town.ja-JP._33
+  - first:
+      213: 8460449951769691926
+    second: spring_town.ja-JP._34
+  - first:
+      213: 190017562781453650
+    second: spring_town.ja-JP._35
+  - first:
+      213: -3469800303646003407
+    second: spring_town.ja-JP._36
+  - first:
+      213: -5622838145995434924
+    second: spring_town.ja-JP._37
+  - first:
+      213: -5478696097846294988
+    second: spring_town.ja-JP._38
+  - first:
+      213: 1292730271634512872
+    second: spring_town.ja-JP._39
+  - first:
+      213: 3417677001941795828
+    second: spring_town.ja-JP._40
+  - first:
+      213: 3791503692391427555
+    second: spring_town.ja-JP._41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spring_town.ja-JP._0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 592
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b065b929f37bc5f0800000000000000
+      internalID: -735366600161140557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 552
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992127f1ddb671ab0800000000000000
+      internalID: -5037439060731096423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 552
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ff17c9ddf9f3420800000000000000
+      internalID: 2611982083059482408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._3
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 552
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe9fff468941ec60800000000000000
+      internalID: 7845632867072712437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._4
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 552
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0168ba85282d4afd0800000000000000
+      internalID: -2331507249795856880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 528
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090c80c404681e920800000000000000
+      internalID: 3017840836026613904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 504
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780f82ff82b7136e0800000000000000
+      internalID: -1859569755117522809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._7
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 480
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9c2c6217b6e1a10800000000000000
+      internalID: 1882059828013222368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._8
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 528
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6da6d3f379b9fb90800000000000000
+      internalID: -7207525820966458003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 504
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccf7d82083893290800000000000000
+      internalID: -7910146684035269428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._10
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 480
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5f1fa682d4490c0800000000000000
+      internalID: -4569942885885938245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 528
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87220aef8dc9ef470800000000000000
+      internalID: 8430348008282923640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._12
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 504
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2910f84cc8569c250800000000000000
+      internalID: 5965410836696465810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 480
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d933a26bb95a1f90800000000000000
+      internalID: -6982169610935911983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._14
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 528
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec80cd490ab4e02d0800000000000000
+      internalID: -3310625523006437170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._15
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 504
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a091d18bd4ba250800000000000000
+      internalID: 5956940385285114511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._16
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 480
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea120e434f0364610800000000000000
+      internalID: 1605024142621417902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._17
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 402
+        width: 76
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11749f16053353340800000000000000
+      internalID: 4842833394640963345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6feea710595249f40800000000000000
+      internalID: 5734249547454672630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8e2dcb2512cc980800000000000000
+      internalID: -8517396156025476926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe21966308c89d00800000000000000
+      internalID: 979752835884330748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 817
+        width: 128
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec80b473649cec10800000000000000
+      internalID: 2084203882446097644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 672
+        width: 159
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c5063d666cc1170800000000000000
+      internalID: 8150607570569026566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 688
+        width: 45
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8511bb15b58bf9840800000000000000
+      internalID: 5233103994380554584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 688
+        width: 20
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357f2e19ee034f200800000000000000
+      internalID: 212848883601176403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 15
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7349b8a96f7d8c0800000000000000
+      internalID: -3974437002504030273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._26
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 832
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581e3e40401a927c0800000000000000
+      internalID: -4095565347482771067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._27
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 816
+        width: 102
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b71b522449c77c0800000000000000
+      internalID: -4072216951228630144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._28
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7171b6eb6c0bc8210800000000000000
+      internalID: 1336637557066897175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._29
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 433
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a0b24caf07c2180800000000000000
+      internalID: -9138805321506289077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._30
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 352
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9917b2ecbb29e63b0800000000000000
+      internalID: -5517311158166785639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521e14a74ac847f00800000000000000
+      internalID: 1113669645921018149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._32
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7418b66ebf3f83a10800000000000000
+      internalID: 1889528306910069063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._33
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 352
+        width: 15
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cc62b7b1f56d460800000000000000
+      internalID: 7266099620443770009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_town.ja-JP._34
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 672
+        width: 112
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617043fd76e896570800000000000000
+      internalID: 8460449951769691926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
