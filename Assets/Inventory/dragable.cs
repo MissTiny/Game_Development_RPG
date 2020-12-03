@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class dragable : MonoBehaviour, IDragHandler
 {
     private RectTransform currentRect;
+    
     public void OnDrag(PointerEventData eventData)
     {
         currentRect.anchoredPosition += eventData.delta;

@@ -12,8 +12,8 @@ public class itemOnWorld : MonoBehaviour
     //玩家是否触碰到物体
     private bool playerEnter = false;
 
-    private Inventory inventory;
-    private ShowInventory showInventory;
+    private 背包接口 bagif;
+    
     
     void Update()
     {
@@ -31,18 +31,19 @@ public class itemOnWorld : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G) && playerEnter == true)
         {
             
-            if (AddNewItem(inventory)) Destroy(gameObject);
+            if (AddNewItem(bagif)) Destroy(gameObject);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        ShowInventory inventory;
         //检查目标对象是否拥有背包
         if (other.GetComponent<ShowInventory>() != null)
         {
-            showInventory = other.GetComponent<ShowInventory>();
-            inventory =showInventory.bag;
-            if (inventory == null) {
+            inventory = other.GetComponent<ShowInventory>();
+            bagif = inventory.bag;
+            if (bagif.bag == null) {
                 return;
             }
             //玩家触碰物品
@@ -54,7 +55,7 @@ public class itemOnWorld : MonoBehaviour
             else {
                 if (npcAutoPickUp == true) {
                     
-                    if(AddNewItem(inventory)) Destroy(gameObject);
+                    if(AddNewItem(bagif)) Destroy(gameObject);
                 }
             }
         }
@@ -67,7 +68,7 @@ public class itemOnWorld : MonoBehaviour
     {
         for (int i = 0; i < bag.itemList.Count; i++)
         {
-            if (bag.itemList[i] == null)
+            if (bag.itemList[i] == null || bag.itemList[i].itemType == "Empty")
             {
                 Debug.Log(i);
                 return i;
@@ -78,9 +79,9 @@ public class itemOnWorld : MonoBehaviour
     }
     private int findSlotInBag(ItemDataModel item)
     {
-        for (int i = 0; i < inventory.itemList.Count; i++)
+        for (int i = 0; i < bagif.bag.itemList.Count; i++)
         {
-            if (inventory.itemList[i] == item)
+            if (bagif.bag.itemList[i] == item)
             {
                 return i;
             }
@@ -93,9 +94,9 @@ public class itemOnWorld : MonoBehaviour
     {
         playerEnter = false;
     }
-    public bool AddNewItem(Inventory Inventory) {
-        
-        
+    public bool AddNewItem(背包接口 bagif) {
+
+        Inventory Inventory = bagif.bag;
         if (!Inventory.itemList.Contains(itemDataModel))
         {
             int idx = findEmptySlotInBag(Inventory);
@@ -104,15 +105,18 @@ public class itemOnWorld : MonoBehaviour
                 Debug.Log("no empty slot for store new item");
                 return false;
             }
+            
             itemDataModel.itemNumber += itemDataModel.addNumber;
             Inventory.itemList[idx] = itemDataModel;
             
-            showInventory.ShowNewItem(itemDataModel,idx);
+            bagif.ShowNewItem(itemDataModel,idx);
         }
         else {
             
             itemDataModel.itemNumber += itemDataModel.addNumber;
-            showInventory.ShowNewItem(itemDataModel, findSlotInBag(itemDataModel));
+            int idx = findSlotInBag(itemDataModel);
+            
+            bagif.ShowNewItem(itemDataModel,idx);
             
         }
         return true;

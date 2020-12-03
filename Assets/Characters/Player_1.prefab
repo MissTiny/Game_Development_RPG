@@ -58,6 +58,7 @@ MonoBehaviour:
   slotItemPrefab: {fileID: 6106812124428539517, guid: 2b76ebe6aff5ae04cb2889f6e167adb0,
     type: 3}
   bagSlot: {fileID: 6762965212621376470, guid: ea338ecaed70047409f04b18596f4207, type: 3}
+  empty: {fileID: 11400000, guid: 7e5e0f77bac0b584fb45f6971c07cf84, type: 2}
   reStartGameEmptyBag: 0
 --- !u!114 &6612323758620714894
 MonoBehaviour:

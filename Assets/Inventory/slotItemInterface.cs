@@ -7,10 +7,12 @@ using UnityEngine.EventSystems;
 public class slotItemInterface: MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
 {
     // Start is called before the first frame update
+    
     public ItemDataModel slotItem;
     public Image slotImage;
     public Text number;
     public GameObject ItemInfoPanel;
+    
     private bool open;
     public void Start()
     {

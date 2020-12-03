@@ -7778,6 +7778,11 @@ PrefabInstance:
       propertyPath: Equip_panel
       value: 
       objectReference: {fileID: 1881084248}
+    - target: {fileID: 5534350049507278081, guid: 72a7c83dfaf458443bb58f772274c4be,
+        type: 3}
+      propertyPath: bag
+      value: 
+      objectReference: {fileID: 1881084258}
     - target: {fileID: 6612323758620714894, guid: 72a7c83dfaf458443bb58f772274c4be,
         type: 3}
       propertyPath: panel
@@ -13155,6 +13160,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1881084246}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1881084258 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7069229151227634386, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1881084246}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881084247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611b1d4451354a4b9ef69958ee63037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1995513992
 PrefabInstance:
   m_ObjectHideFlags: 0

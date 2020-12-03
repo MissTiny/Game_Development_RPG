@@ -18,16 +18,13 @@ using UnityEngine.UI;
 public class ShowInventory : MonoBehaviour
 {
     public GameObject Equip_panel;
-    public GameObject Bag_panel;
-    public Inventory bag;
-    public slotItemInterface slotItemPrefab;
-    public Transform bagSlot;
-    
-    public bool reStartGameEmptyBag;
-    private 背包显示接口 bagIt;
+    public 背包接口 bag;
 
-    private GameObject slotGrid;
-    private Text description;
+
+
+
+    private CanvasGroup bagCanvasGroup;
+    private CanvasGroup equipCanvasGroup;
     private bool iopen = false;
     private bool eopen = false;
     //private GameObject parent;
@@ -35,23 +32,14 @@ public class ShowInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bagIt = Bag_panel.GetComponent<背包显示接口>();
-        slotGrid = bagIt.grid;
-        description = bagIt.description;
-        init();
-        //parent = transform.parent.gameObject;
+        //equipCanvasGroup = Equip_panel.GetComponent<CanvasGroup>();
+        bagCanvasGroup = bag.GetComponent<CanvasGroup>();
+        bag.gameObject.SetActive(true);
+        Hide(bagCanvasGroup);
         isPlayer = tag == "Player";
     }
 
-    private void init()
-    {
-        initBagShowing();
-        if (reStartGameEmptyBag) {
-            initBagData();
-        }
-        RefreshItem();
-        description.text = "";
-    }
+
     
 
     // Update is called once per frame
@@ -69,93 +57,50 @@ public class ShowInventory : MonoBehaviour
     }
     void OpenEquip()
     {
-            RefreshItem();
+            
             eopen = Equip_panel.active;
             eopen = !eopen;
+            //Show();
             Equip_panel.SetActive(eopen);
         
     }
     void OpenBag()
     {
-            iopen = Bag_panel.active;
-            iopen = !iopen;
-            Bag_panel.SetActive(iopen);
+        //iopen = bag.gameObject.active;
+        iopen = bagCanvasGroup.alpha == 0f ? true : false;
+        
+        if (iopen)
+        {
+            Show(bagCanvasGroup);
+        }
+        else {
+            Hide(bagCanvasGroup);
+        }
+        
+        //bag.gameObject.SetActive(iopen);
         
     }
 
-    public void updateItemDescription(string Description) {
-        description.text= Description;
+    void Hide(CanvasGroup cg)
+    {
+        cg.alpha = 0f; //this makes everything transparent
+        cg.blocksRaycasts = false; //this prevents the UI element to receive input events
     }
 
-    private void initBagData() {
-        for (int i = 0; i < bag.itemList.Count; i++)
-        {
-            Debug.Log("asdfasdfadfadfadfa");
-            if(bag.itemList[i]!=null) bag.itemList[i].itemNumber = 0;
-        }
-        bag.itemList.Clear();
-        for (int i = 0;i<bag.initCapacity;i++) {
-            bag.itemList.Add(null);
-        }
+    void Show(CanvasGroup cg)
+    {
+        cg.alpha = 1f;
+        cg.blocksRaycasts = true;
     }
 
-    //根据给的itemDataModel，item的数据实体创建对应的背包显示外观prefab，并显示在背包里
-    public void ShowNewItem(ItemDataModel itemDataModel, int SlotIdx) {
-        if (itemDataModel == null) {
-            return;
-        }
-        destroySlotItem(SlotIdx);
-        GameObject father = getSubObjectByIndex(slotGrid, SlotIdx);
-        slotItemInterface newItem = Instantiate(slotItemPrefab, father.transform.position, Quaternion.identity);
-        if (newItem == null)
-        {
-            return;
-        }
-        newItem.gameObject.transform.SetParent(father.transform);
-        newItem.slotItem = itemDataModel;
-        newItem.slotImage.sprite = itemDataModel.itemImage;
-        newItem.number.text = itemDataModel.itemNumber.ToString();
-    }
-    
-    
 
-    private GameObject getSubObjectByIndex(GameObject father, int idx) {
-        return father.transform.GetChild(idx).gameObject;
-    }
 
-    
 
-    public void RefreshItem() {
-        //initBagShowing();
-        showAllItem();
-    }
 
-    //clear all the prefab in the bag, but the data of items will still be there
-    public void initBagShowing() {
-        for (int i = 0;i<slotGrid.transform.childCount;i++) {
-            Destroy(slotGrid.transform.GetChild(i).gameObject);
-        }
-        
-        for (int i = 0; i < bag.initCapacity; i++)
-        {
-            Transform newItem = Instantiate(bagSlot, slotGrid.transform.position, Quaternion.identity);
-            newItem.SetParent(slotGrid.transform);
-        }
-    }
 
-    //重新把inventory（背包的数据实体，不是显示的panel）里的item重新加载到panel上
-    private void showAllItem() {
-        for (int i = 0;i<bag.itemList.Count;i++) {
-            ShowNewItem(bag.itemList[i],i);
-        }
-    }
-    private void destroySlotItem(int idx) {
-        GameObject father = getSubObjectByIndex(slotGrid, idx);
-        for (int j = 0; j <father.transform.childCount; j++)
-        {
-            Destroy(father.transform.GetChild(j).gameObject);
-        }
-    }
 
-    
+
+
+
+
 }

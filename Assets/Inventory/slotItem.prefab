@@ -139,7 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b544118c045e07049a92de188b7b75d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalParent: {fileID: 0}
 --- !u!114 &6106812124428539517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0081932a0fd193441bbe8d51efa84773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotItem: {fileID: 0}
+  slotItem: {fileID: 11400000, guid: 7e5e0f77bac0b584fb45f6971c07cf84, type: 2}
   slotImage: {fileID: 3900796913882992459}
   number: {fileID: 6536562774668442265}
   ItemInfoPanel: {fileID: 3616498242231305977}

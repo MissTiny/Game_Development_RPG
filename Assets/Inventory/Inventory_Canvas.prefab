@@ -197,6 +197,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 304106622237009272, guid: 3f5282b3026aa51438c55be87c144532,
+        type: 3}
+      propertyPath: reStartGameEmptyBag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 486014002049076848, guid: 3f5282b3026aa51438c55be87c144532,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -401,6 +406,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423678873825664504, guid: 3f5282b3026aa51438c55be87c144532,
+        type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3700406428474966683, guid: 3f5282b3026aa51438c55be87c144532,
         type: 3}

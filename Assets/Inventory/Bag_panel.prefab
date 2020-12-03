@@ -13,13 +13,14 @@ GameObject:
   - component: {fileID: 304106622237009272}
   - component: {fileID: 579287691317558558}
   - component: {fileID: 579287691317558553}
+  - component: {fileID: 3423678873825664504}
   m_Layer: 5
   m_Name: Bag_panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &579287691317558552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -70,6 +71,11 @@ MonoBehaviour:
   description: {fileID: 579287691426176391}
   grid: {fileID: 579287693178949164}
   bagTitle: {fileID: 579287693070984318}
+  bag: {fileID: 11400000, guid: b512858dab2aa5749bd7f2c3354ff708, type: 2}
+  bagSlot: {fileID: 5082718595844239136, guid: ea338ecaed70047409f04b18596f4207, type: 3}
+  slotItemPrefab: {fileID: 6106812124428539517, guid: 2b76ebe6aff5ae04cb2889f6e167adb0,
+    type: 3}
+  reStartGameEmptyBag: 1
 --- !u!222 &579287691317558558
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -107,6 +113,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &3423678873825664504
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579287691317558555}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &579287691426176385
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,8 +321,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 579287691317558555}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 3423678873825664504}
+        m_MethodName: set_alpha
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3423678873825664504}
+        m_MethodName: set_blocksRaycasts
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

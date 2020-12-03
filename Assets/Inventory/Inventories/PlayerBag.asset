@@ -12,15 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3155e453a727f4391178cd728c1edc, type: 3}
   m_Name: PlayerBag
   m_EditorClassIdentifier: 
-  initCapacity: 10
+  initCapacity: 4
   itemList:
   - {fileID: 11400000, guid: 67e6b8a2270abf5438eacd50e509be77, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
