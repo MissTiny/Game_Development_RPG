@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c771c32ce37ab94ab97398f435cbafa, type: 3}
-  m_Name: sword
+  m_Name: Empty
   m_EditorClassIdentifier: 
-  itemName: sword
-  itemImage: {fileID: 21300002, guid: 03dd1ef6fb163214c9e1ac0242dab3ba, type: 3}
-  itemNumber: 1
-  addNumber: 1
-  itemType: 
-  itemInfo: This is a sword! Why it is here???
+  itemName: Empty
+  itemImage: {fileID: 0}
+  itemNumber: 0
+  addNumber: 0
+  itemType: Empty
+  itemInfo: 

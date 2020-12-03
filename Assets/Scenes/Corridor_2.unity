@@ -3494,6 +3494,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5305747107756825170, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
+        type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7937768339173136713, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3612,6 +3617,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 757189451}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &766236376 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7069229151227634386, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 757189451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766236371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611b1d4451354a4b9ef69958ee63037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &888212527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1024290884157602056, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
@@ -4276,6 +4293,11 @@ PrefabInstance:
       propertyPath: Equip_panel
       value: 
       objectReference: {fileID: 888212527}
+    - target: {fileID: 5534350049507278081, guid: 72a7c83dfaf458443bb58f772274c4be,
+        type: 3}
+      propertyPath: bag
+      value: 
+      objectReference: {fileID: 766236376}
     - target: {fileID: 6612323758620714894, guid: 72a7c83dfaf458443bb58f772274c4be,
         type: 3}
       propertyPath: panel

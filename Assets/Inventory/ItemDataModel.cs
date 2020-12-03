@@ -6,6 +6,7 @@ using UnityEngine;
 public class ItemDataModel : ScriptableObject
 {
     // Start is called before the first frame update
+    
     public string itemName;
     public Sprite itemImage;
     //背包里有多少
