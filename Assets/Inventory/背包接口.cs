@@ -103,13 +103,46 @@ public class 背包接口 : MonoBehaviour
     }
 
     private void init() {
-        if (reStartGameEmptyBag) {
+        if (reStartGameEmptyBag)
+        {
             initBagData();
             initBagShowing();
         }
+        else {
+            Refresh();
+        }
     }
+    private void Refresh() {
+        for (int i = 0; i < grid.transform.childCount; i++)
+        {
+            Destroy(grid.transform.GetChild(i).gameObject);
+        }
+        for (int i = 0; i < bag.itemList.Count; i++)
+        {
+            bagSlotIF bs = Instantiate(bagSlot, grid.transform.position, Quaternion.identity);
+            bs.index = i;
+            bs.transform.SetParent(grid.transform);
 
-    
+            ItemDataModel itemDataModel = bag.itemList[i];
+            if (itemDataModel == null || itemDataModel.itemType == "Empty")
+            {
+                continue;
+            }
+
+            GameObject father = bs.gameObject;
+            slotItemInterface newItem = Instantiate(slotItemPrefab, father.transform.position, Quaternion.identity);
+            if (newItem == null)
+            {
+                return;
+            }
+
+            newItem.gameObject.transform.SetParent(father.transform);
+            newItem.slotItem = itemDataModel;
+            newItem.slotImage.sprite = itemDataModel.itemImage;
+            newItem.number.text = itemDataModel.itemNumber.ToString();
+        }
+        
+    }
 
     // Start is called before the first frame update
     void Start()

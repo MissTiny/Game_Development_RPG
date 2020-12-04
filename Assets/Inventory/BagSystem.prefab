@@ -119,6 +119,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5760871919553836076}
     m_Modifications:
+    - target: {fileID: 7069229151227634386, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
+        type: 3}
+      propertyPath: reStartGameEmptyBag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7937768339173136713, guid: 2eb3fa4e48fa6e74ca2c2d51751c61a5,
         type: 3}
       propertyPath: m_LocalPosition.x

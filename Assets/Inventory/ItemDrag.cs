@@ -38,8 +38,7 @@ public class ItemDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragHan
             //删除物品data
             int idx = originalParent.GetComponent<bagSlotIF>().index;
             Inventory inventory = curItem.transform.parent.parent.GetComponent<背包接口>().bag;
-            inventory.itemList[idx].addNumber = inventory.itemList[idx].itemNumber;
-            inventory.itemList[idx].itemNumber = 0;
+            inventory.itemList[idx].itemNumber = inventory.itemList[idx].itemNumber - inventory.itemList[idx].addNumber;
             inventory.itemList[idx] = null;
             //删除显示
             Destroy(transform.gameObject);
@@ -88,8 +87,8 @@ public class ItemDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragHan
             //删除物品data
             int idx = originalParent.GetComponent<bagSlotIF>().index;
             Inventory inventory = curItem.transform.parent.parent.GetComponent<背包接口>().bag;
-            inventory.itemList[idx].addNumber = inventory.itemList[idx].itemNumber; 
-            inventory.itemList[idx].itemNumber = 0;
+            inventory.itemList[idx].itemNumber = inventory.itemList[idx].itemNumber - inventory.itemList[idx].addNumber; 
+            
             inventory.itemList[idx] = null;
             //删除显示
             Destroy(transform.gameObject);
