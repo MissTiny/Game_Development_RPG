@@ -56,6 +56,16 @@ public class 背包接口 : MonoBehaviour
 
     private void initBagData()
     {
+        //init world items
+        GameObject items = GameObject.Find("worldItems");
+        if (items != null)
+        {
+            for (int i = 0; i < items.transform.childCount; i++)
+            {
+                items.transform.GetChild(i).GetComponent<itemOnWorld>().itemDataModel.itemNumber = 0;
+            }
+        }
+        //init bag
         List<ItemDataModel> list = bag.itemList;
         for (int i = 0; i < list.Count; i++)
         {
