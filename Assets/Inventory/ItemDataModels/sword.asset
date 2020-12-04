@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: sword
   itemImage: {fileID: 21300002, guid: 03dd1ef6fb163214c9e1ac0242dab3ba, type: 3}
-  itemNumber: 1
+  itemNumber: 0
   addNumber: 1
   itemType: 
   itemInfo: This is a sword! Why it is here???

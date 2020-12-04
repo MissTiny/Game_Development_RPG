@@ -317,6 +317,10 @@ MonoBehaviour:
   description: {fileID: 4537082810087841480}
   grid: {fileID: 888668304564950815}
   bagTitle: {fileID: 3466309310704908518}
+  bag: {fileID: 0}
+  bagSlot: {fileID: 0}
+  slotItemPrefab: {fileID: 0}
+  reStartGameEmptyBag: 0
 --- !u!222 &7575242126823804228
 CanvasRenderer:
   m_ObjectHideFlags: 0
