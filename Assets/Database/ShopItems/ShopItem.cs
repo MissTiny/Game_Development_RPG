@@ -10,9 +10,9 @@ public class ShopItem
     public int Price;
 
     //teacher can be added in the future
-    public Course(string itemName, string itemDescription,int price){
+    public ShopItem(string itemName, string itemDescription,int price){
         ItemName = itemName;
-        ItemDescription = itermDescription;
+        ItemDescription = itemDescription;
         Price = price;
     }
 
