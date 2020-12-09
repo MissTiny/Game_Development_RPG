@@ -15,9 +15,11 @@ public class EndingCareer
     public int MaxMemory;
     public int MiniCharm;
     public int MaxCharm;
+    public int Money;
     public string[] CourseName;
 
-    public EndingCareer(string name, int miniiq,int maxiq,int minieq,int maxeq, int miniimagination,int maximagination, int minimemory, int maxmemory, int minicharm, int maxcharm, string[] course){
+
+    public EndingCareer(string name, int miniiq,int maxiq,int minieq,int maxeq, int miniimagination,int maximagination, int minimemory, int maxmemory, int minicharm, int maxcharm, int money, string[] course){
         Name = name;
         
         MaxImagination = maximagination;
@@ -31,7 +33,7 @@ public class EndingCareer
         MiniEQ = minieq;
         MiniMemory = minimemory;
         MiniImagination = miniimagination;
-
+        Money=money;
         CourseName = course;
 
 
