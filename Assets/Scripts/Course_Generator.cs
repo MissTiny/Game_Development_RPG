@@ -20,7 +20,7 @@ public class Course_Generator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //ScrollMenu();
     }
     private void ScrollMenu()
     {
