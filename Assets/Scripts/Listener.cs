@@ -17,6 +17,7 @@ public class Listener : MonoBehaviour
     private static float Current_Click_volume;
     public static int Ending_date = 3;
     private static int Current_date;
+    private static List<Course> Daily_Course_List = new List<Course>();
 
 
     void Awake()
@@ -84,5 +85,38 @@ public class Listener : MonoBehaviour
     public static void addDate()
     {
         Current_date++;
+    }
+    public static void AddCoursesIntoList(Course course)
+    {
+        if(Daily_Course_List.Count < 5)
+        {
+            Daily_Course_List.Add(course);
+        }
+        else
+        {
+            List<Course> temp = new List<Course>();
+            temp.Add(course);
+            for(int i = 0; i < 4; i++)
+            {
+                temp.Add(Daily_Course_List[i]);
+            }
+            Daily_Course_List = temp;
+        }
+    }
+    public static List<Course> GetCourses()
+    {
+        return Daily_Course_List;
+    }
+    public static void RemoveLastCourse()
+    {
+        if(Daily_Course_List.Count > 0)
+        {
+            Daily_Course_List.RemoveAt(Daily_Course_List.Count - 1);
+        }
+        
+    }
+    public static void resetCoursesList()
+    {
+        Daily_Course_List = new List<Course>();
     }
 }
