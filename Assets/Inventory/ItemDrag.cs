@@ -117,7 +117,7 @@ public class ItemDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragHan
     {
         dropPos = GameObject.FindWithTag("Player").transform;
         curItem = GetComponent<slotItemInterface>();
-        bag = transform.parent.parent.GetComponent<背包接口>().bag;
+       // bag = transform.parent.parent.GetComponent<背包接口>().bag;
     }
 
     // Update is called once per frame
