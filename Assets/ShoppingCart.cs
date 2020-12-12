@@ -11,6 +11,7 @@ public class ShoppingCart : MonoBehaviour
     public Text text;
     private static ShopItem ShopItem = null;
     private static bool shopped = false;
+    public Button checkout;
     public GameObject shopper1;
     public GameObject shopper2;
     void Start()
@@ -35,7 +36,17 @@ public class ShoppingCart : MonoBehaviour
         {
             shopper1.SetActive(true);
             shopper2.SetActive(false);
-            text.text = ShopItem.ItemDescription;
+            if(Ability.moneyTotal >= ShopItem.Price)
+            {
+                text.text = ShopItem.ItemDescription;
+                checkout.interactable = true;
+            }
+            else
+            {
+                text.text = ShopItem.ItemDescription + "\n\n" + "You are unable to buy it";
+                checkout.interactable = false;
+            }
+            
         }else if (shopped && (ShopItem == null))
         {
             shopper1.SetActive(false);
@@ -55,5 +66,10 @@ public class ShoppingCart : MonoBehaviour
     public static void setshopped( bool s)
     {
         shopped = s;
+    }
+    public static void addtoBag()
+    {
+        Ability.moneyTotal = Ability.moneyTotal - ShopItem.Price;
+        Listener.addToBag(ShopItem);
     }
 }

@@ -22,8 +22,8 @@ public class Listener : MonoBehaviour
     private GameObject player;
 
     public static bool isFirstG = true;
-    
 
+    public static List<ShopItem> bag = new List<ShopItem>();
 
     void Awake()
     {
@@ -38,6 +38,9 @@ public class Listener : MonoBehaviour
             Current_Click_volume = 5;
             Current_Walk_volume = 5;
             Current_date = 0;
+
+            ShopItemList ShopItems = new ShopItemList();
+            bag.Add(ShopItems.ShopItems[7]);
         }
         else
         {
@@ -127,5 +130,22 @@ public class Listener : MonoBehaviour
     public static void resetCoursesList()
     {
         Daily_Course_List = new List<Course>();
+    }
+
+    public static void addToBag(ShopItem shopItem)
+    {
+        bag.Add(shopItem);
+    }
+
+    public static void removeFromBag(string shopitem)
+    {
+        for(int i = 0; i < bag.Count; i++)
+        {
+            if (bag[i].ItemName.Equals(shopitem))
+            {
+                bag.RemoveAt(i);
+                break;
+            }
+        }
     }
 }
