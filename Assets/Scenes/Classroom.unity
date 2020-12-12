@@ -3138,7 +3138,7 @@ PrefabInstance:
     - target: {fileID: 3307973127192879603, guid: f34ae49050f9adb49b12d8923a82a45d,
         type: 3}
       propertyPath: reStartGameEmptyBag
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4355379376357815766, guid: f34ae49050f9adb49b12d8923a82a45d,
         type: 3}

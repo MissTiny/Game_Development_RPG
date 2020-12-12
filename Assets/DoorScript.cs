@@ -7,6 +7,7 @@ public class DoorScript : MonoBehaviour
     public int level;
     void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.tag == "Player")
         {
             Application.LoadLevel(level);

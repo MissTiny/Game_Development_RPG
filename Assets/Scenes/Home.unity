@@ -213,7 +213,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19650587}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -4911,7 +4911,7 @@ PrefabInstance:
     - target: {fileID: 382936597372691441, guid: 72a7c83dfaf458443bb58f772274c4be,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 382936597372691441, guid: 72a7c83dfaf458443bb58f772274c4be,
         type: 3}

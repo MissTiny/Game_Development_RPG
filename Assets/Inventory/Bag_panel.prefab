@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &579287691317558552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   bagSlot: {fileID: 5082718595844239136, guid: ea338ecaed70047409f04b18596f4207, type: 3}
   slotItemPrefab: {fileID: 6106812124428539517, guid: 2b76ebe6aff5ae04cb2889f6e167adb0,
     type: 3}
-  reStartGameEmptyBag: 1
+  reStartGameEmptyBag: 0
 --- !u!222 &579287691317558558
 CanvasRenderer:
   m_ObjectHideFlags: 0

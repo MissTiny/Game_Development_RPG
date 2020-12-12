@@ -92,7 +92,7 @@ public class movable : MonoBehaviour
 
         if (collision.tag == "CorridorEnter")
         {
-            Application.LoadLevel(2);
+            Application.LoadLevel(3);
         }
         else if (collision.tag == "HomeEnter")
         {
@@ -100,15 +100,15 @@ public class movable : MonoBehaviour
         }
         else if (collision.tag == "ClassroomEnter")
         {
-            Application.LoadLevel(3);
+            Application.LoadLevel(4);
         }
         else if (collision.tag == "LibraryEnter")
         {
-            Application.LoadLevel(4);
+            Application.LoadLevel(5);
         }
         else if (collision.tag == "MusicroomEnter")
         {
-            Application.LoadLevel(5);
+            Application.LoadLevel(6);
         }
 
 

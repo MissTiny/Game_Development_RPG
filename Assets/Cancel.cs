@@ -7,5 +7,6 @@ public class Cancel : MonoBehaviour
     public void OnClick()
     {
         ShoppingCart.cleanCart();
+        Application.LoadLevel(4);
     }
 }
