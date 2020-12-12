@@ -58,7 +58,7 @@ public class Listener : MonoBehaviour
         }
         if(Current_date > Ending_date)
         {
-            Application.LoadLevel(7);
+            Application.LoadLevel(11);
         }
     }
     public static void setCurrent_Bgm_volume(float volume)
