@@ -5,6 +5,7 @@ using UnityEngine;
 public class EndingCareer
 {
     public string Name;
+    public int Level;
     public int MiniIQ;
     public int MaxIQ;
     public int MiniEQ;
@@ -19,9 +20,9 @@ public class EndingCareer
     public string[] CourseName;
 
 
-    public EndingCareer(string name, int miniiq,int maxiq,int minieq,int maxeq, int miniimagination,int maximagination, int minimemory, int maxmemory, int minicharm, int maxcharm, int money, string[] course){
+    public EndingCareer(string name,int level, int miniiq,int maxiq,int minieq,int maxeq, int miniimagination,int maximagination, int minimemory, int maxmemory, int minicharm, int maxcharm, int money, string[] course){
         Name = name;
-        
+        Level= level;
         MaxImagination = maximagination;
         MaxIQ = maxiq;
         MaxMemory = maxmemory;
