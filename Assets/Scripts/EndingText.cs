@@ -37,7 +37,7 @@ public class EndingText : MonoBehaviour
             {
                 continue;
             }
-            
+            //Add adjustment in courses
             if (career.Level < level)
             {
                 continue;
@@ -69,12 +69,6 @@ After years of working, you know it is the time to find the one to marry with. Y
 
 
 
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }
