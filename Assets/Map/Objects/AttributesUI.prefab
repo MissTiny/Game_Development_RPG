@@ -111,6 +111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AttriPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 5972296328975716239, guid: e2998010759eedb4c993c7b809f458bf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5972296328975716242, guid: e2998010759eedb4c993c7b809f458bf,
         type: 3}
       propertyPath: m_LocalPosition.x
