@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Linq;
+using System;
 
-public class LoadGame : MonoBehaviour
+
+public class LoadInit : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,11 +19,18 @@ public class LoadGame : MonoBehaviour
     {
         
     }
+    
     public void TaskOnClick()
     {
-        AudioManager.instance.Play("Button Click");
-        Data data = SaveSystem.Load();
-        Ability.AbilityLoad(data.IQ, data.EQ, data.Imagination, data.Memory, data.Charm, data.Pressure, data.Energy);
-        Listener.Current_date = data.Day;
+        Debug.Log(Listener.Current_date);
+        if ( Listener.Current_date == 0)
+        {
+
+            Application.LoadLevel(13);
+        } else{
+
+            Application.LoadLevel(1);
+        }
+
     }
 }

@@ -28,6 +28,6 @@ public class Data{
         Charm = Ability.Charm;
         Pressure = Ability.Pressure;
         Energy = Ability.Energy;
-        Day = Ability.Day;
+        Day = Listener.Current_date;
     }
 }

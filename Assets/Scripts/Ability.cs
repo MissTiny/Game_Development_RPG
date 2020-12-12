@@ -12,7 +12,9 @@ public static class Ability
     public static int Charm = 0;
     public static int Pressure = 0;
     public static int Energy = 100;
-    public static int Day = 1;
+
+    public static int dailymoney = 15;
+    public static int moneyTotal =0;
     // Update is called once per frame
     /*
     public Ability(int iq, int eq, int imagination, int memory, int charm, int pressure, int energy, int day){
@@ -26,7 +28,7 @@ public static class Ability
         Day = day;
     }
     */
-    public static void AbilityLoad(int iq, int eq, int imagination, int memory, int charm, int pressure, int energy, int day){
+    public static void AbilityLoad(int iq, int eq, int imagination, int memory, int charm, int pressure, int energy){
         IQ = iq;
         EQ = eq;
         Imagination = imagination;
@@ -34,7 +36,6 @@ public static class Ability
         Charm = charm;
         Pressure = pressure;
         Energy = energy;
-        Day = day;
     }
     public static int getIQ(){
         return IQ;
@@ -84,12 +85,5 @@ public static class Ability
     public static int updateEnergy(int energy){
         Energy = energy;
         return Energy;
-    }
-    public static int getDay(){
-        return Day;
-    }
-    public static int updateDay(int day){
-        Day = day;
-        return Day;
     }
 }

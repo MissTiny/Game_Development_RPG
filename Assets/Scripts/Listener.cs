@@ -16,10 +16,12 @@ public class Listener : MonoBehaviour
     private static float Current_Walk_volume;
     private static float Current_Click_volume;
     public static int Ending_date = 3;
-    private static int Current_date;
+    public static int Current_date=0;
     private static List<Course> Daily_Course_List = new List<Course>();
     public static int lastlevel = 1;
     private GameObject player;
+
+    public static bool isFirstG = true;
     
 
 
@@ -56,10 +58,7 @@ public class Listener : MonoBehaviour
             Destroy(temp_submenu);
             submenu_stat = !submenu_stat;
         }
-        if(Current_date > Ending_date)
-        {
-            Application.LoadLevel(11);
-        }
+
     }
     public static void setCurrent_Bgm_volume(float volume)
     {
@@ -88,6 +87,13 @@ public class Listener : MonoBehaviour
     public static void addDate()
     {
         Current_date++;
+        Ability.moneyTotal += Ability.dailymoney;
+        if(Current_date > Ending_date)
+        {
+            isFirstG = false;
+            Current_date = 0;
+            Application.LoadLevel(11);
+        }
     }
     public static void AddCoursesIntoList(Course course)
     {
