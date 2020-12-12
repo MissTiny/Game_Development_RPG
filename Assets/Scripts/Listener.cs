@@ -19,7 +19,7 @@ public class Listener : MonoBehaviour
     private static int Current_date;
     private static List<Course> Daily_Course_List = new List<Course>();
     public static int lastlevel = 1;
-    public GameObject player;
+    private GameObject player;
     
 
 
@@ -46,7 +46,6 @@ public class Listener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        player = GameObject.Find("Player_1");
         if(Input.GetKeyDown(KeyCode.Escape) && submenu_stat == false)
         {
             temp_submenu = Instantiate(submenu);
