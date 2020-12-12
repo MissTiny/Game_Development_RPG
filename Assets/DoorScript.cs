@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    public int level;
+    public int nextlevel;
+    public int currentlevel;
     void OnTriggerEnter2D(Collider2D collision)
     {
 
         if (collision.tag == "Player")
         {
-            Application.LoadLevel(level);
+            Application.LoadLevel(nextlevel);
         }
+        Listener.lastlevel = currentlevel;
     }
 }

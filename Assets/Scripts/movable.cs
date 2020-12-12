@@ -89,29 +89,6 @@ public class movable : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
 
-
-        if (collision.tag == "CorridorEnter")
-        {
-            Application.LoadLevel(3);
-        }
-        else if (collision.tag == "HomeEnter")
-        {
-            Application.LoadLevel(1);
-        }
-        else if (collision.tag == "ClassroomEnter")
-        {
-            Application.LoadLevel(4);
-        }
-        else if (collision.tag == "LibraryEnter")
-        {
-            Application.LoadLevel(5);
-        }
-        else if (collision.tag == "MusicroomEnter")
-        {
-            Application.LoadLevel(6);
-        }
-
-
     }
 
     public string getDir()

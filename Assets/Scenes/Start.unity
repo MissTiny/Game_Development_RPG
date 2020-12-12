@@ -739,7 +739,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1425911341}
+      - m_Target: {fileID: 0}
         m_MethodName: TaskOnClick
         m_Mode: 1
         m_Arguments:
@@ -787,24 +787,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185721257}
   m_CullTransparentMesh: 0
---- !u!1 &1425911339 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8133223418875200555, guid: a6582b56faa0cf444a8a437a432f8716,
-    type: 3}
-  m_PrefabInstance: {fileID: 8133223419732584960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1425911341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425911339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da6026f4d4e75dd40974b96735fbefef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1673177852
 GameObject:
   m_ObjectHideFlags: 0
