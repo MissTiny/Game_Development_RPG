@@ -12,7 +12,9 @@ public class StartText : MonoBehaviour
     {   startText = GetComponent<Text>();
         if(Listener.isFirstG){
             startText.text =
-$@"You come from nowhere!Someone leaves you a home and pays your tuition for high school.
+$@"You come from nowhere!
+
+Someone leaves you a home and pays your tuition for high school.
 
 Now study hard, earn your future and ... your children's future.
 
