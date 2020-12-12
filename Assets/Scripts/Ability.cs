@@ -32,7 +32,7 @@ public static class Ability
         Imagination = imagination;
         Memory = memory;
         Charm = charm;
-        Pressure = Pressure;
+        Pressure = pressure;
         Energy = energy;
         Day = day;
     }

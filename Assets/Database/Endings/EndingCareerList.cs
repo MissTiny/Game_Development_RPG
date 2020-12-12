@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndingCareerList 
 {
-    public List<EndingCareer> CareerLists;
+    public List<EndingCareer> CareerLists{get;set;}
     public EndingCareerList(){
         CareerLists = new List<EndingCareer>();
         CareerLists.Add(new EndingCareer("Mathematician",1,1500,99999,0,99999,0,99999,0,99999,0,99999,30,new string[] {"Calculus I"}));
