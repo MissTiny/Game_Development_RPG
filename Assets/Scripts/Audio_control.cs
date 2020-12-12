@@ -12,35 +12,27 @@ public class Audio_control : MonoBehaviour
     public Slider slider_walk;
     public void Start()
     {
-        if(Listener.getCurrent_Click_volume() != 0)
+        if (Listener.getCurrent_Click_volume() != 0)
         {
             Click_volume.isOn = true;
-        }
-        else
-        {
-            Click_volume.isOn = false;
         }
         slider_bgm.value = Listener.getCurrent_Bgm_volume();
         slider_walk.value = Listener.getCurrent_Walk_volume();
     }
     public void Update()
     {
-        //TaskOnClick();
+        TaskOnClick();
+
     }
     public void TaskOnClick()
     {
         if (this.Click_volume.isOn)
         {
-            if (AudioManager.instance.isPlaying("Button Click") == false)
-            {
-                AudioManager.instance.setVolume("Button Click", 5);
-                Click_volume.isOn = true;
-            }
+            AudioManager.instance.setVolume("Button Click", 5);
         }
         else
         {
             AudioManager.instance.setVolume("Button Click", 0);
-            Click_volume.isOn = true;
         }
     }
     public void TaskOnSlider_bgm()
