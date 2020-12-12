@@ -19,6 +19,7 @@ public class LoadGame : MonoBehaviour
     {
         AudioManager.instance.Play("Button Click");
         Data data = SaveSystem.Load();
-        Ability.AbilityLoad(data.IQ, data.EQ, data.Imagination, data.Memory, data.Charm, data.Pressure, data.Energy, data.Day);
+        Ability.AbilityLoad(data.IQ, data.EQ, data.Imagination, data.Memory, data.Charm, data.Pressure, data.Energy);
+        Listener.Current_date = data.Day;
     }
 }

@@ -65,7 +65,10 @@ When thinking of your life, you always wonder what the life would be like if you
 
 After years of working, you know it is the time to find the one to marry with. You can't forget girls you meet in your high school. With the pressure from parents, you date with these girls. You end up married with no one.";
 
-
+        Ability.dailymoney = finalcareer.Money;
+        Ability.moneyTotal = 0;
+        Ability.AbilityLoad(0,0,0,0,0,0,100);
+        Listener.Current_date = 0;
 
 
 

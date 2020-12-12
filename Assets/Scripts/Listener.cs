@@ -58,10 +58,7 @@ public class Listener : MonoBehaviour
             Destroy(temp_submenu);
             submenu_stat = !submenu_stat;
         }
-        if(Current_date > Ending_date)
-        {
-            Application.LoadLevel(11);
-        }
+
     }
     public static void setCurrent_Bgm_volume(float volume)
     {
@@ -91,6 +88,12 @@ public class Listener : MonoBehaviour
     {
         Current_date++;
         Ability.moneyTotal += Ability.dailymoney;
+        if(Current_date > Ending_date)
+        {
+            isFirstG = false;
+            Current_date = 0;
+            Application.LoadLevel(11);
+        }
     }
     public static void AddCoursesIntoList(Course course)
     {
