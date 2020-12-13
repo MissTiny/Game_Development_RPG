@@ -13,7 +13,8 @@ public class ItemScript : MonoBehaviour
     {
         for(int i = 0; i < ShopItemList.ShopItems.Count; i++)
         {
-            if (ShopItemList.ShopItems[i].ItemName.Equals(text.text))
+            //ShopItemList.ShopItems[i].ItemName.Equals(text.text)
+            if (ShopItemList.ShopItems[i].ItemName.Equals(text.text.Split(' ')[0]))
             {
                 ShoppingCart.setShopItem(ShopItemList.ShopItems[i]);
                 ShoppingCart.setshopped(false);

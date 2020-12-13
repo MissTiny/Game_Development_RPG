@@ -23,7 +23,8 @@ public class Listener : MonoBehaviour
 
     public static bool isFirstG = true;
 
-    public static List<ShopItem> bag = new List<ShopItem>();
+    public static List<ShopItem> bag = new List<ShopItem>(){new ShopItem("Tea",
+        "Black Tea",25)};
 
     void Awake()
     {
@@ -91,6 +92,8 @@ public class Listener : MonoBehaviour
     {
         Current_date++;
         Ability.moneyTotal += Ability.dailymoney;
+        Ability.Energy = Mathf.Min(100,(Ability.Energy+80));
+        Ability.Pressure = Mathf.Max(0,(Ability.Pressure-80));
         if(Current_date > Ending_date)
         {
             isFirstG = false;

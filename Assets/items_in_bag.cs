@@ -18,9 +18,8 @@ public class items_in_bag : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
-    private void ScrollMenu()
+    public void ScrollMenu()
     {
         var children = new List<GameObject>();
         foreach (Transform child in Content.transform) children.Add(child.gameObject);

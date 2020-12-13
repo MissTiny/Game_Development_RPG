@@ -14,7 +14,7 @@ public static class Ability
     public static int Energy = 100;
 
     public static int dailymoney = 15;
-    public static int moneyTotal =0;
+    public static int moneyTotal =100;
     // Update is called once per frame
     /*
     public Ability(int iq, int eq, int imagination, int memory, int charm, int pressure, int energy, int day){

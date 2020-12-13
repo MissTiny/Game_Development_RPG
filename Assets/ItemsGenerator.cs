@@ -35,7 +35,7 @@ public class ItemsGenerator : MonoBehaviour
             Debug.Log(shopItemList.ShopItems[i].ItemName);
             GameObject item = Instantiate(item_btn, Content.transform);
             Text text = item.GetComponentInChildren<Text>(); 
-            text.text = shopItemList.ShopItems[i].ItemName;
+            text.text = shopItemList.ShopItems[i].ItemName + $" ${shopItemList.ShopItems[i].Price}";
         }
     }
 }

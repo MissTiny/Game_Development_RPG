@@ -26,24 +26,28 @@ public class ShoppingCart : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
+        
         if (ShopItem == null && !shopped)
         {
+            Debug.Log("Not Shopping");
             shopper1.SetActive(true);
             shopper2.SetActive(false);
+            checkout.interactable = false;
             text.text = "What can I help you?";
         }
         else if(!(ShopItem == null) && !shopped)
         {
+            Debug.Log("Shopping");
             shopper1.SetActive(true);
             shopper2.SetActive(false);
             if(Ability.moneyTotal >= ShopItem.Price)
             {
-                text.text = ShopItem.ItemDescription;
+                text.text = ShopItem.ItemDescription+$"\n\nAmount:${ShopItem.Price}";
                 checkout.interactable = true;
             }
             else
             {
-                text.text = ShopItem.ItemDescription + "\n\n" + "You are unable to buy it";
+                text.text = ShopItem.ItemDescription + $"\n\nAmount:${ShopItem.Price}" + "\n\nYou are unable to buy it";
                 checkout.interactable = false;
             }
             
